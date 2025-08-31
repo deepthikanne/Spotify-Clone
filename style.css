@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar{
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #030303;
+    position: fixed;
+    padding: 10px;
+    height: 100vh;
+
+}
+.sidebar-nav{
+    background-color: #111111;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-nav .logo{
+    width: 120px;
+    
+}
+.sidebar-nav .logo img{
+    width: 100%;
+    
+}
+.sidebar-nav ul {
+    list-style: none ;
+}
+.sidebar-nav ul li{
+    padding: 10px 20px;
+}
+.sidebar-nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 16px;
+}
+.sidebar-nav ul li a:hover{
+    color: #fff;
+}
+.sidebar-nav ul li a i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.library::after{
+    content: '+' ;
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.create-playlist{
+    background: #302f2f;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+.sidebar-scroll{
+    height: 120px;
+    overflow-y: auto; 
+
+    
+}
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+
+}
+.sidebar-scroll::-webkit-scrollbar-thumb{
+   background: transparent;
+   width: 10px;
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+}
+.create-playlist h4{
+    color: #fff;
+    font-size: 15px;
+
+}
+.create-playlist p{
+    color: #fff;
+    font-size: 12px 0;
+    margin: 12px 0;
+}
+.create-playlist button{
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    
+}
+.create-playlist button:hover{
+    transform: scale(1.1,1.1);
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color: #818080;
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color: #bebcbc;
+}
+.privacy ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.privacy ul li{
+    padding: 0 12px;
+    padding-bottom: 8px;
+}
+.image ul{
+    list-style: none;
+}
+.eng-btn button{
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 20px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #111111;
+    outline: none;
+    border: none;
+    color: white;
+    border: 1px solid #818080;
+    cursor: pointer;
+    margin-bottom: 83px;
+    
+   
+}
+.eng-btn:hover button{
+    color: #bebcbc;
+    transform: scale(1.1,1.1);
+}
+.eng-btn button i{
+    font-size: 16px;
+    margin-right: 8px;
+    color: white;
+    
+}
+
+.eng-btn:hover button i{
+    color: #bebcbc;
+    transform: scale(1.1,1.1);
+
+}
+.main-section{
+    margin-left: 300px;
+    background-color: #181818;
+    border-radius: 10px;
+    height: 87vh;
+    overflow-y: auto; 
+    margin-top: 12px;
+    margin-bottom: 70px;
+}
+.main-section::-webkit-scrollbar{
+    background: transparent;
+
+}
+.main-section::-webkit-scrollbar-thumb{
+   background: transparent;
+   width: 10px;
+}
+.main-section:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+}
+
+.main-section .top-nav{
+    padding: 25px 30px;
+    background:#111111;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+
+}
+.main-section .top-nav .prev-btn button {
+
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.main-section .top-nav .prev-btn button i{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: not-allowed;
+}
+.top-nav .login-btn .sign-up{
+     margin-left: 30px;
+     outline: none;
+     border: none;
+     font-size: 16px;
+     font-weight: 600;
+     background-color: #111111;
+     color: #818080;
+     cursor: pointer;
+    
+}
+.top-nav .login-btn .sign-up:hover{
+    color: #fff;
+}
+.top-nav .login-btn .log-in{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-left: 15px;
+    cursor: pointer;
+    
+}
+.top-nav .login-btn .log-in:hover{
+    font-weight: 600;
+    transform: scale(1.1,1.1);
+}
+.spotify-playlist ul{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    
+}
+.spotify-playlist ul li{
+    display: inline;
+    
+}
+.spotify-playlist ul .pop{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.spotify-playlist ul .pop:hover{
+    text-decoration: underline;
+}
+.spotify-playlist ul .show{
+    color: #818080;
+    font-size: 13px;
+    font-weight: 600;
+    float: right;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+.spotify-playlist ul .show:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .card {
+    display: inline-block;
+    margin-top: 10px;  
+}
+.card figure{
+    margin-bottom: 20px;
+}
+ .card figure{
+    margin-left: 1px;
+    width: 210px;
+    height: 300px;
+    padding: 20px 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 1.5;
+    margin-left:15px ;
+    
+}
+.card:hover figure{
+    background:#272626;
+    border-radius: 10px;
+}
+.card:hover .play-btn i{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.card figure img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 0 0 0 1px;
+}
+.card figcaption p{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+.card figcaption h5{
+    color: #818080;
+    cursor: auto;
+}
+.spotify-playlist .play-btn{
+   position: relative; 
+}
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 14px;
+    right: 25px;
+    top:-110px;
+    opacity: 0;
+    transition: all 1.5;
+}
+.album .card-box{
+    width:210px;
+    height: 300px;
+    margin-left: 15px;
+    padding: 10px 0;
+}
+.album .card-box:hover{
+    background:#272626;
+    border-radius: 10px;
+}
+
+.album .card-box figure img{
+    width:200;
+    height: 200;
+    border-radius: 20px;
+    padding: 5px 5px 15px 15px;
+}
+.card-box figure h3{
+    padding: 5px 12px;
+    color: #fff;
+    font-weight: 300;
+}
+.card-box figure p{
+    padding: 5px 12px;
+    
+}
+.card-box figure p a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.album ul{
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 25px;
+    
+}
+.album ul li{
+    display: inline;
+}
+
+.album ul .pop{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.album ul .pop:hover{
+    text-decoration: underline;
+}
+.album ul .show{
+    color: #818080;
+    font-size: 13px;
+    font-weight: 600;
+    float: right;
+    padding: 0 20px 0 20px;
+    cursor: pointer;
+}
+.album ul .show:hover{
+    text-decoration: underline;
+}
+.album .play-btn2{
+    position: relative;
+}
+.album .play-btn2 i{
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 14px;
+    right: 20px;
+    top:-130px;
+    opacity: 0;
+    transition: all 1.5;
+}
+ .card-box:hover .play-btn2 i{
+    opacity: 100%;
+}
+.album .card-box {
+    display: inline-block;
+    margin-top: 10px;  
+}
+.footer-section{
+    padding: 20px 60px;
+}
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-section .footer .footer-links .footer-column{
+ margin: 0 12px;
+}
+.footer-section .footer .footer-links div{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+
+}
+.footer-section .footer .footer-links ul{
+    list-style: none;
+    margin: 6px 0;
+}
+.footer-section .footer .footer-links ul a{
+    text-decoration: none;
+    color: #969393;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 200;
+    
+}
+.footer-section .footer .footer-links ul a:hover{
+   color: #fff;
+   text-decoration: underline;   
+}
+.footer-section .footer .footer-links ul li{
+    padding: 0 0 10px 0;
+}
+.soial-links{
+    float: right;
+    margin-top: -230px;
+    
+    
+}
+.soial-links i{
+    color:#fff;
+    background-color:#272626;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 16px 0 0 0;
+    margin-left: 10px;
+    font-size: 20px;  
+}
+.soial-links i:hover{
+    background-color: #818080;
+}
+.copyright{
+    margin-top: 50px ;
+    margin-bottom: 60px;
+
+}
+.copyright p{
+    color: #818080;
+    font-weight: 500;
+}
+
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#ae2896,#509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 40px;
+    right: 0;
+    
+    
+}
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+hr{
+    outline: none;
+    border: none;
+    border:1px solid #575656;
+    width: 100%;
+}
+.preview p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+.preview button{
+    padding: 15px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    font-weight:400 ;
+    font-size: 16px;
+
+}
+.preview button:hover{
+    transform: scale(1.1,1.1);
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
